@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Dosser TN — Speed Bump Map</title>
+<title>Dosser TN - Speed Bump Map</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
@@ -305,8 +305,8 @@
   <div id="panel">
     <div id="header">
       <div class="logo">DOSSER<span>.TN</span></div>
-      <div class="tagline">Speed bump map — by the people, for the people</div>
-      <div id="bump-count"><strong id="count-num">—</strong> bumps reported</div>
+      <div class="tagline">Speed bump map - by the people, for the people</div>
+      <div id="bump-count"><strong id="count-num">-</strong> bumps reported</div>
     </div>
     <div id="tabs">
       <button class="tab active" onclick="switchTab('feed')">🗺 Map feed</button>
@@ -342,9 +342,9 @@
           <div class="form-section-title">📊 Details</div>
           <label>Severity</label>
           <select id="f-severity">
-            <option value="small">🟢 Small — slight bump</option>
-            <option value="medium" selected>🟠 Medium — noticeable bump</option>
-            <option value="large">🔴 Large — dangerous bump</option>
+            <option value="small">🟢 Small - slight bump</option>
+            <option value="medium" selected>🟠 Medium - noticeable bump</option>
+            <option value="large">🔴 Large - dangerous bump</option>
           </select>
         </div>
 
@@ -563,7 +563,7 @@ async function submitBump() {
   const photoInput = document.getElementById('f-photo');
 
   if (isNaN(lat) || isNaN(lng)) {
-    setStatus('Please set a location — use GPS or click on the map.', 'error'); return;
+    setStatus('Please set a location - use GPS or click on the map.', 'error'); return;
   }
   if (lat < 30 || lat > 38 || lng < 7 || lng > 12) {
     setStatus('Coordinates seem outside Tunisia. Please check.', 'error'); return;
